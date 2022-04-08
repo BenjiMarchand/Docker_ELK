@@ -4,7 +4,9 @@
 
 Do this:
 $ git clone https://github.com/BenjiMarchand/Docker_ELK
+
 $ cd Docker_ELK 
+
 $ docker-compose up -d
 
 And that's it!
