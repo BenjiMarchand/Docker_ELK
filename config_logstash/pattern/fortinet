@@ -1,0 +1,13 @@
+POLID_X  %{BEGINNING} %{TYPE} level="%{WORD:level}"%{GREEDYDATA} %{SOURCE} %{DESTINATION}%{GREEDYDATA} %{COUNTRY} sessionid=%{NUMBER:session_id} proto=%{NUMBER:proto} action="%{GREEDYDATA:action}" %{POLICY} service=%{QS:service}
+POLID_0 %{BEGINNING} %{TYPE} level="%{WORD:level}"%{GREEDYDATA} %{SOURCE} %{DESTINATION}%{GREEDYDATA} sessionid=%{NUMBER:session_id} proto=%{NUMBER:proto} action="%{GREEDYDATA:action}" %{POLICY} service=%{QS:service}
+POLID_112 %{BEGINNING} %{TYPE} eventtype="%{GREEDYDATA:event_time}%{GREEDYDATA} srcip=%{IP:source_ip} dstip=%{IP:destination} srcport=%{NUMBER:source_port} dstport=%{NUMBER:destination_port}%{GREEDYDATA} service=%{QS:service}%{GREEDYDATA} policyid=%{NUMBER:policy_id}
+EVENT %{BEGINNING} type="%{WORD:type}" subtype="%{GREEDYDATA:subtype}" level=
+COFELY %{BEGINNING} %{TYPE} level="%{WORD:level}"%{GREEDYDATA} %{SOURCE} %{DESTINATION}%{GREEDYDATA} sessionid=%{NUMBER:session_id} proto=%{NUMBER:proto} action="%{GREEDYDATA:action}" %{POLICY} service=%{QS:service}
+COFELY_17 %{BEGINNING} %{TYPE} level="%{WORD:level}"%{GREEDYDATA} %{SOURCE} %{DESTINATION}%{GREEDYDATA} srcport=%{NUMBER/source_port} dstport=%{NUMBER:destination_port} srcintf=%{QS:source_interface}%{GREEDYDATA} service=%{QS:service}%{GREEDYDATA} %{POLICY} sessionid=%{NUMBER:session_id}%{GREEDYDATA} action="%{GREEDYDATA:action}" appcat%{GREEDYDATA} app="%{GREEDYDATA:app}"
+BEGINNING %{GREEDYDATA}date=20%{DATE:date} time=%{TIME:time} devname="%{USERNAME:hostname}" devid="%{HOST:devid}"%{GREEDYDATA}
+SOURCE srcip=%{IP:source_ip}%{GREEDYDATA}
+DESTINATION dstip=%{IP:destination_ip}%{GREEDYDATA}
+POLICY policyid=%{NUMBER:policy_id}%{GREEDYDATA}
+COUNTRY srccountry="%{GREEDYDATA:source_country}" dstcountry="%{GREEDYDATA:destination_country}"
+TYPE type="%{GREEDYDATA:type}" subtype="%{GREEDYDATA:subtytle}"
+
