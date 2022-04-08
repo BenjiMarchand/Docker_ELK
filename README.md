@@ -12,8 +12,16 @@ git
 
 ### Depedency Installation
 #### docker
-$ yum install docker-ce git
+$ dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+$ yum install docker-ce -y
+$ systemctl deamon-relaod
+$ systemctl start docker.service
+$systeemctl enable docker.service
+
+
 $ yum install 
+
+
 
 ### Stack elk Installation
 $ git clone https://github.com/BenjiMarchand/Docker_ELK
