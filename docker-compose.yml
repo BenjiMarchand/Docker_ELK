@@ -22,7 +22,7 @@ services:
     hostname: logstash
     restart: always
     volumes:
-    - /root/logstash/:/logstash_dir
+    - %{pwd}/config_logstash/:/logstash_dir
     command: logstash -f /logstash_dir/logstash.conf
     depends_on:
       - Elasticsearch
