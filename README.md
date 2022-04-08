@@ -1,6 +1,7 @@
 # Docker_config
 
-## This repository is used to install and configure an ELK stack. It interacts with the outside world through port 4444 syslog and 5044 with the beats software.
+## Introduction
+This repository is used to install and configure an ELK stack. It interacts with the outside world through port 4444 syslog and 5044 with the beats software.
 
 ### Dependency:
 docker
