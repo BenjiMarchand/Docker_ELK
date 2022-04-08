@@ -1,6 +1,6 @@
 # Docker_config
 
-#Ce dépot est utilisé afin d'installer et configurer une stack ELK. 
+-Ce dépot est utilisé afin d'installer et configurer une stack ELK. 
 
 Pour commencer faite un git clone:
 
