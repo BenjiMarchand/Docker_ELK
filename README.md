@@ -13,17 +13,26 @@ git
 ### Depedency Installation
 #### docker
 $ dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+
 $ yum install docker-ce -y
-$ systemctl deamon-relaod
+
 $ systemctl start docker.service
-$systeemctl enable docker.service
+
+$ systemctl daemon-reload
+
+$ systemctl enable docker.service
+
+### docker-compose
+$ curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+$ chmod +x /usr/local/bin/docker-compose
+
+### git
+$ yum install git
 
 
-$ yum install 
 
-
-
-### Stack elk Installation
+### Stack ELK Installation
 $ git clone https://github.com/BenjiMarchand/Docker_ELK
 
 $ cd Docker_ELK 
