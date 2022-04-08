@@ -5,8 +5,13 @@ This repository is used to install and configure an ELK stack. It interacts with
 
 ### Dependency:
 docker
+
 docker-compose
+
 git
+
+### Depedency Installation
+#### docker
 
 
 Do this:
