@@ -11,7 +11,7 @@ docker-compose
 git
 
 ### Depedency Installation
-#### docker
+#### =>docker<=
 $ dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
 
 $ yum install docker-ce -y
@@ -22,12 +22,12 @@ $ systemctl daemon-reload
 
 $ systemctl enable docker.service
 
-#### docker-compose
+#### =>docker-compose<=
 $ curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
 $ chmod +x /usr/local/bin/docker-compose
 
-#### git
+#### =>git<=
 $ yum install git
 
 =====================================================================================================
