@@ -12,10 +12,10 @@ git
 
 ### Depedency Installation
 #### docker
+$ yum install docker-ce git
+$ yum install 
 
-
-Do this:
-
+### Stack elk Installation
 $ git clone https://github.com/BenjiMarchand/Docker_ELK
 
 $ cd Docker_ELK 
