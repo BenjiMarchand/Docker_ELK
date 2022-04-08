@@ -30,11 +30,7 @@ $ chmod +x /usr/local/bin/docker-compose
 #### git
 $ yum install git
 
-
-
-
-
-
+=============================================================================================================================================================
 
 ### Stack ELK Installation
 $ git clone https://github.com/BenjiMarchand/Docker_ELK
