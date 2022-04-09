@@ -37,6 +37,8 @@ $ mkdir /data
 
 $mkdir /data/elastic_data
 
+Mount a volume if you want 
+
 $chmod 777 /data/ -R
 
 $ git clone https://github.com/BenjiMarchand/Docker_ELK
