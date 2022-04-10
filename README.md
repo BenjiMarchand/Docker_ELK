@@ -43,7 +43,7 @@ $chmod 777 /data/ -R
 
 $ git clone https://github.com/BenjiMarchand/Docker_ELK
 
-$ cd Docker_ELK 
+$ cd Docker_ELK_fortigate 
 
 $ docker-compose up -d
 
