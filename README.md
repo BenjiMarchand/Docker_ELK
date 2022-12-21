@@ -12,39 +12,50 @@ git
 
 ### Depedency Installation
 #### =>docker<=
-$ dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+```
+dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
 
-$ yum install docker-ce -y
+yum install docker-ce -y
 
-$ systemctl start docker.service
+systemctl start docker.service
 
-$ systemctl daemon-reload
+systemctl daemon-reload
 
-$ systemctl enable docker.service
+systemctl enable docker.service
+```
 
 #### =>docker-compose<=
-$ curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
-$ chmod +x /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+```
 
 #### =>git<=
-$ yum install git
+
+```
+yum install git
+```
 
 =====================================================================================================
 
 ### Stack ELK Installation
-$ mkdir /data
+```
+mkdir /data
 
-$mkdir /data/elastic_data
+mkdir /data/elastic_data
+```
 
 Mount a volume if you want 
 
-$chmod 777 /data/ -R
+```
+chmod 777 /data/ -R
 
-$ git clone https://github.com/BenjiMarchand/Docker_ELK_fortigate
+git clone https://github.com/BenjiMarchand/Docker_ELK_fortigate
 
-$ cd Docker_ELK_fortigate 
+cd Docker_ELK_fortigate 
 
-$ docker-compose up -d
+docker-compose up -d
+```
 
 ## And that's it!
